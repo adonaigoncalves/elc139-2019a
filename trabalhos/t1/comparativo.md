@@ -9,9 +9,9 @@ Nome: Adonai Gabriel
 | --------------------------------------------------------- | --------------------- | --------------- |
 | Nome/Título                                               |        Summit         |   Customizado   |
 | Imagem (foto, diagrama, screenshot, etc.)                 | <img src="https://farm2.staticflickr.com/1759/41941941904_9fdcd0faab_k.jpg" width="200"> | Substitua-me. <img src="http://www.top500.org/static//images/Top500_logo.png" width="48">|
-| Classificação de Flynn                                    |         MIMD          |      SIMD       |
-| Memória: compartilhada, distribuída ou ambas?             |     Distribuída       |  Compartilhada  |
-| Número total de núcleos de processamento                  |      2,397,824        |        4        |
+| Classificação de Flynn                                    |     MIMD + SIMD       |      MIMD       |
+| Memória: compartilhada, distribuída ou ambas?             |        Ambas          |  Compartilhada  |
+| Número total de núcleos de processamento                  |      2,397,824        |4 Núcleos e 4 Threads|
 | Fabricante e modelo do(s) processador(es)                 |    IBM POWER9 22C     |  Intel i5 7400  |
 | Frequência do(s) processador(es)                          |       3.07GHz         |    3.00 GHz     |
 | Memória total                                             |     2,801,664 GB      |      8 GB       |
