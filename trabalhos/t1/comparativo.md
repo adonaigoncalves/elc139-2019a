@@ -15,7 +15,7 @@ Nome: Adonai Gabriel
 | Fabricante e modelo do(s) processador(es)                 |    IBM POWER9 22C     |  Intel i5 7400  |
 | Frequência do(s) processador(es)                          |       3.07GHz         |    3.00 GHz     |
 | Memória total                                             |     2,801,664 GB      |      8 GB       |
-| Tipo(s) de interconexão entre os núcleos/processadores    |Dual-rail Mellanox EDR Infiniband|Direct Media Interface (DMI)|
+| Tipo(s) de interconexão entre os núcleos/processadores    |Dual-rail Mellanox EDR Infiniband|Quickpath Interconnect (com DMIs)|
 | Desempenho Linpack                                        |    143,500 TFlop/s    |                 |
 
 ### Referências
