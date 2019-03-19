@@ -8,7 +8,7 @@ Nome: Adonai Gabriel
 | Característica                                            | Computador no TOP500  | Meu computador  |
 | --------------------------------------------------------- | --------------------- | --------------- |
 | Nome/Título                                               |        Summit         |                 |
-| Imagem (foto, diagrama, screenshot, etc.)                 | <img src="https://flic.kr/p/26Ugq6o" width="48"> | Substitua-me. <img src="http://www.top500.org/static//images/Top500_logo.png" width="48">|
+| Imagem (foto, diagrama, screenshot, etc.)                 | <img src="https://farm2.staticflickr.com/1759/41941941904_9fdcd0faab_k.jpg" width="48"> | Substitua-me. <img src="http://www.top500.org/static//images/Top500_logo.png" width="48">|
 | Classificação de Flynn                                    |         MIMD          |      SIMD       |
 | Memória: compartilhada, distribuída ou ambas?             |     Distribuída       |  Compartilhada  |
 | Número total de núcleos de processamento                  |      2,397,824        |        4        |
