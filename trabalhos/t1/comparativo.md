@@ -16,7 +16,7 @@ Nome: Adonai Gabriel
 | Frequência do(s) processador(es)                          |       3.07GHz         |    3.00 GHz     |
 | Memória total                                             |     2,801,664 GB      |      8 GB       |
 | Tipo(s) de interconexão entre os núcleos/processadores    |Dual-rail Mellanox EDR Infiniband|Quickpath Interconnect (com DMIs)|
-| Desempenho Linpack                                        |    143,500 TFlop/s    |                 |
+| Desempenho Linpack                                        |    143,500 TFlop/s    |  128.23 GFlop/s |
 
 ### Referências
 - IBM. IBM Power System AC922 Introduction and Technical Overview. https://www.redbooks.ibm.com/redpapers/pdfs/redp5472.pdf.
