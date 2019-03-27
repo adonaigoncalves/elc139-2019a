@@ -5,7 +5,7 @@
 Nome: Adonai Gabriel Lorto Peres Gonçalves
 
 [Pthreads](#Pthreads)
-[OpenMP](#openmp)
+[OpenMP](#Openmp)
 
 # Pthreads
 
@@ -107,3 +107,9 @@ Com base nas tabelas acima, houve um pequeno ganho com o acréscimo de threads e
 5. Explique as diferenças entre [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) e [pthreads_dotprod2.c](pthreads_dotprod/pthreads_dotprod2.c). Com as linhas removidas, o programa está correto?
 
 O `pthreads_dotprod2.c` não realiza exclusão mútua na função `dotprod_worker` durante o acesso a variável que receberá a soma total (`dotdata.c`). Isso pode acarretar em inconsistência no resultado, pois as duas threads podem querer incrementar a mesma variável ao mesmo tempo, porém algumas vezes o programa pode gerar saídas consistentes.
+
+# OpenMP
+
+1. Implemente um programa equivalente a [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) usando OpenMP.
+
+2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
