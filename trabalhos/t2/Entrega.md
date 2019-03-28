@@ -78,31 +78,25 @@ A aceleração foi de ~ 1.69.
 
 | Tamanho  | Repetições | 1 Thread | 2 Threads | 4 Threads |
 | -------- | ---------- | -------- | --------- | --------- |
-| 1000000  | 1000       | 2723435  | 1782653   | 1608536   |
-| 1000000  | 2000       | 5408812  | 3868067   | 3567237   |
-| 1000000  | 3000       | 8181887  | 6342766   | 6135867   |
-| 5000000  | 1000       | 13662816 | 11978328  | 10904851  |
-| 5000000  | 2000       | 27410897 | 25057043  | 21463494  |
-| 5000000  | 3000       | 41154303 | 37560038  | 33136946  |
-| 10000000 | 1000       | 27356148 | 23436885  | 20620489  |
-| 10000000 | 2000       | 54600561 | 46666305  | 42163011  |
-| 10000000 | 3000       | 83784850 | 75609937  | 71391537  |
+| 1000000  | 1000       | 2721892  | 1386003   | 772170    |
+| 1000000  | 2000       | 5408812  | 2825345   | 1543960   |
+| 5000000  | 1000       | 13598542 | 7034924   | 4775388   |
+| 5000000  | 2000       | 27349511 | 14037434  | 9531410   |
+| 10000000 | 1000       | 27357584 | 14082316  | 9717152   |
+| 10000000 | 2000       | 54406983 | 28181426  | 19440930  |
 
 4. Elabore um gráfico/tabela de aceleração a partir dos dados obtidos no exercício anterior.
 
 | Tamanho  | Repetições | 2 Threads(Speedup) | 4 Threads(Speedup) |
 | -------- | ---------- | ------------------ | ------------------ |
-| 1000000  | 1000       | 1.52               | 1.69               |
-| 1000000  | 2000       | 1.39               | 1.51               |
-| 1000000  | 3000       | 1.28               | 1.33               |
-| 3000000  | 1000       | 1.14               | 1.25               |
-| 3000000  | 2000       | 1.09               | 1.27               |
-| 3000000  | 3000       | 1.09               | 1.24               |
-| 10000000 | 1000       | 1.16               | 1.32               |
-| 10000000 | 2000       | 1.17               | 1.29               |
-| 10000000 | 3000       | 1.10               | 1.17               |
+| 1000000  | 1000       | 1.96               | 3.52               |
+| 1000000  | 2000       | 1.91               | 3.50               |
+| 5000000  | 1000       | 1.93               | 2.84               |
+| 5000000  | 2000       | 1.94               | 2.86               |
+| 10000000 | 1000       | 1.94               | 2.81               |
+| 10000000 | 2000       | 1.93               | 2.79               |
 
-Com base nas tabelas acima, houve um pequeno ganho com o acréscimo de threads em relação ao sequencial, porém é notável que o ganho não foi consistente com o aumento de threads, possívelmente por alguma falha de configuração ou por eu estar utilizando cygwin no Windows.
+Com base nas tabelas acima, é perceptível o ganho quase ideal no uso de 2 threads, porém o ganho decai conforme aumentamos o tamanho do vetor no uso de 4 threads. Isso pode ter sido causado pela concorrência de outros processos pelos 4 núcleos do meu processador.
 
 5. Explique as diferenças entre [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) e [pthreads_dotprod2.c](pthreads_dotprod/pthreads_dotprod2.c). Com as linhas removidas, o programa está correto?
 
