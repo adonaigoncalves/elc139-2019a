@@ -70,9 +70,9 @@ for (i = 0; i < nthreads; i++) {
 
 Média de 5 execuções, considerando os menores tempos:
 
-Speedup = 2723435 usec / 1608536 usec = 1.69
+Speedup = 2721892 usec / 1386003 usec = 1.96 
 
-A aceleração foi de ~ 1.69.
+A aceleração foi de ~ 1.96.
 
 3. A aceleração se sustenta para outros tamanhos de vetores, números de threads e repetições? Para responder a essa questão, você terá que realizar diversas execuções, variando o tamanho do problema (tamanho dos vetores e número de repetições) e o número de threads (1, 2, 4, 8..., dependendo do número de núcleos). Cada caso deve ser executado várias vezes, para depois calcular-se um tempo de processamento médio para cada caso. Atenção aos fatores que podem interferir na confiabilidade da medição: uso compartilhado do computador, tempos muito pequenos, etc.
 
