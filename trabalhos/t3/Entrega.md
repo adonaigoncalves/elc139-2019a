@@ -26,7 +26,9 @@ Nesse tipo de escalonamento, cada thread executa o número de vezes que foi espe
 
 Saída do código:
 ```
-Case 1: Static schedule with chunk                                                                                   ACCCCCCCCCCCCCCCCCCCCBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAA                                                         A=20 B=20 C=20 
+Case 1: Static schedule with chunk
+ACCCCCCCCCCCCCCCCCCCCBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAA
+A=20 B=20 C=20 
 ```
 
 ### 2) Com scheduling STATIC e sem chunk
@@ -34,7 +36,9 @@ Se não for fornecido um valor de chunk, cada thread executa o número de itera�
 
 Saída do código:
 ```
-Case 2: Static schedule without chunk                                                                                CAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCC                                                         A=20 B=20 C=20
+Case 2: Static schedule without chunk
+CAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCC
+A=20 B=20 C=20
 ```
 
 ### 3) Com scheduling DYNAMIC e chunk
@@ -42,7 +46,9 @@ Neste caso, cada thread executa o número de vezes que foi especificado no chunk
 
 Saída do código:
 ```
-Case 3: Dynamic schedule with chunk                                                                                  CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBCCCC                                                         A=50 B=5 C=5
+Case 3: Dynamic schedule with chunk
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBCCCC
+A=50 B=5 C=5
 ```
 
 ### 4) om scheduling DYNAMIC e sem chunk
@@ -50,7 +56,9 @@ Similar ao caso anterior (com chunk), porém com chunk valendo 1.
 
 Saída do código:
 ```
-Case 4: Dynamic schedule without chunk                                                                               BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC                                                         A=57 B=2 C=1 
+Case 4: Dynamic schedule without chunk
+BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC
+A=57 B=2 C=1 
 ```
 
 ### 5) Com scheduling GUIDED e chunk
@@ -58,7 +66,9 @@ Este caso é semelhante ao anterior (dynamic), porém com um tratamento diferent
 
 Saída do código:
 ```
-Case 5: Guided schedule with chunk                                                                                   CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBCCCCCCCCCCCCCCCCCCC                                                         A=31 B=9 C=20 
+Case 5: Guided schedule with chunk
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBCCCCCCCCCCCCCCCCCCC
+A=31 B=9 C=20 
 ```
 
 ### 6) Com tratamento de exclusão mútua e com scheduling GUIDED
@@ -66,7 +76,9 @@ Similar ao caso anterior (com chunk), porém o tamanho de chunk final é 1.
 
 Saída do código:
 ```
-Case 6: Guided schedule without chunk                                                                                BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCCCCCCCBBBBBBBBBBBBBBBBBBB                                                         A=31 B=20 C=9 
+Case 6: Guided schedule without chunk
+BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCCCCCCCBBBBBBBBBBBBBBBBBBB
+A=31 B=20 C=9 
 ```
 
 ### 7) Com scheduling RUNTIME
@@ -74,7 +86,9 @@ Como o próprio nome já diz, esse caso deixa que o tipo de scheduling seja esco
 
 Saída do código:
 ```
-Case 7: Runtime schedule                                                                                             CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACB                                                         A=57 B=1 C=2
+Case 7: Runtime schedule
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACB
+A=57 B=1 C=2
 ```
 
 ### 8) Com scheduling AUTO
@@ -82,7 +96,9 @@ Neste caso, a tarefa de escolher a melhor forma de escalonar o problema é desig
 
 Saída do código:
 ```
-Case 8: Auto schedule                                                                                                BCCCCCCCCCCCCCCCCCCCCBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAA                                                         A=20 B=20 C=20 
+Case 8: Auto schedule
+BCCCCCCCCCCCCCCCCCCCCBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAA
+A=20 B=20 C=20 
 ```
 
 ### 9) Sem tratamento de exclusão mútua e com scheduling AUTO
@@ -99,7 +115,9 @@ Para este caso, usei outra função sem exclusão mútua para apresentar saídas
 Este caso mostra com clareza que, sem a exclusão mútua, o vetor não é totalmente preenchido e a saída é incorreta, pois a soma das quantidades de caractéres A, B e C não é igual a 60:
 
 ``` 
-Case 9: Auto schedule without critical section                                                                       ABCABACBACBACBACBACABCABCABCABCABCABCABCABCABCABCABCACBACB--                                                         A=20 B=19 C=19
+Case 9: Auto schedule without critical section
+ABCABACBACBACBACBACABCABCABCABCABCABCABCABCABCABCABCACBACB--
+A=20 B=19 C=19
 ``` 
 
 ### Observações
