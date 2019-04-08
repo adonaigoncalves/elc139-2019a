@@ -3,6 +3,7 @@
 # Scheduling com OpenMP
 
 Nome: Adonai Gabriel Lorto Peres Gonçalves
+
 Disciplina: ELC139 - Programação Paralela
 
 ##  Casos de teste
