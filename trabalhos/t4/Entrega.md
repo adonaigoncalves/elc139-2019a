@@ -22,6 +22,13 @@ Abaixo a tabela com o resultado dos testes realizados em ambas as soluções:
 Abaixo os slides construídos para uma eventual apresentação:
 - [T4 - ELC139.pdf](T4 - ELC139.pdf)
 
+## Observações
+
+Infelizmente não consegui utilizar o cluster para executar os códigos paralelizados, acabei deixando para muito tarde e, portanto, não enviei email para a senhora. Pelo que entendi, a pasta do meu usuário não pôde ser criada. Abaixo estão os erros que obtive:
+
+- [Erro1](Erro1.png)
+- [Erro2](Erro2.png)
+
 ## Referências
 
 - Tutorial OpenMP: https://computing.llnl.gov/tutorials/openMP/
