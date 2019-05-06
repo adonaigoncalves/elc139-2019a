@@ -24,10 +24,10 @@ Na implementação dessa solução foi definido que a mensagem inicial seria 0 e
 
 ## Parte 3
 
-O problema do programa [mpi_errado1.c](mpi_errado1.c) é o valor passado para a variável tag no MPI_Send e no MPI_Recv, pois o valor da tag é diferente em ambos processos e é necessário que ela seja igual para ambos os processos. Abaixo o programa corrigido:
+O problema do programa [mpi_errado1.c](mpi_errado1.c) é o valor passado para a variável tag no MPI_Send e no MPI_Recv, pois o valor da tag é diferente em ambos processos e é necessário que ela seja igual. Abaixo o programa corrigido:
 - [mpi_corrigido1.c](mpi_corrigido1.c)
 
-Já o problema do programa [mpi_errado2.c](mpi_errado2.c) é que está faltando a chamada da função MPI_Finalize() antes de sair do programa, impedindo assim o funcionamento do programa. Abaixo o programa corrigido:
+Já o problema do programa [mpi_errado2.c](mpi_errado2.c) é que está faltando a chamada da função MPI_Finalize() antes de sair do programa, impedindo assim o funcionamento do mesmo. Abaixo o programa corrigido:
 - [mpi_corrigido2.c](mpi_corrigido2.c)
 
 ## Observações
