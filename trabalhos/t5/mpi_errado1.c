@@ -9,19 +9,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc,char *argv[])
-{
+int main(int argc, char *argv[]){
    int numtasks, rank, dest, tag, source, rc;
    int inmsg, outmsg = 100;
    MPI_Status stat;
 
-   MPI_Init(&argc,&argv);
+   MPI_Init(&argc, &argv);
    MPI_Comm_size(MPI_COMM_WORLD, &numtasks);
    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
    printf("Processo %d iniciando...\n",rank);
 
-   if (rank == 0) {
+   if (rank == 0){
       dest = 1;
       source = dest;
       tag = rank;
@@ -30,7 +29,7 @@ int main(int argc,char *argv[])
       rc = MPI_Recv(&inmsg, 1, MPI_INT, source, tag, MPI_COMM_WORLD, &stat);
       printf("Recebi mensagem do processo %d...\n", source);
    }
-   else if (rank == 1) {
+   else if (rank == 1){
       dest = 0;
       source = dest;
       tag = rank;
