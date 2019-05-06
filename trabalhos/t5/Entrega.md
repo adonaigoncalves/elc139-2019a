@@ -8,7 +8,7 @@ Disciplina: ELC139 - Programação Paralela
 
 ## Parte 1
 
-A solução implementada foi baseada na solução do trabalho 2 em pthreads:
+A solução implementada foi baseada na solução do trabalho 2 em pthreads, onde deve-se informar manualmente o pedaço que cada processo fica responsável por calcular:
 - [mpi_dotprod.c](mpi_dotprod.c)
 
 Os resultados da avaliação de desempenho, considerando uma média de 5 execuções para cada tipo, foram:
