@@ -11,7 +11,7 @@ Disciplina: ELC139 - Programação Paralela
 A solução implementada foi baseada na solução do trabalho 2 em pthreads:
 - [mpi_dotprod.c](mpi_dotprod.c)
 
-Os resultados foram:
+Os resultados da avaliação de desempenho, considerando uma média de 5 execuções para cada tipo, foram:
 - [results.csv](results.csv)
 
 Especificações do meu computador:
