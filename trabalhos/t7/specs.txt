@@ -1,0 +1,15 @@
+Processador
+
+Model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+Cpu cores	: 4
+Nº de threads: 4
+Frequencia :  ~ 3.00 GHz
+
+Memória
+
+MemTotal : 8 GB
+Total Width : 64 bits
+Data Width : 64 bits
+Type: LPDDR4
+Type Detail: Synchronous
+Speed: 2400 MHz

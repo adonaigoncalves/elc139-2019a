@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpi.h>
+#include <sys/time.h>
+
+long wtime(){
+    struct timeval t;
+    gettimeofday(&t, NULL);
+    return t.tv_sec * 1000000 + t.tv_usec;
+}
 
 void sr_bcast(void* data, int count, MPI_Datatype datatype, int root, MPI_Comm communicator) {
   
@@ -32,6 +39,7 @@ int main(int argc, char** argv) {
   int myrank;    // "rank" do processo
   int p;         // numero de processos
   int root;      // rank do processo root
+  long start_time, end_time;      // variáveis para cálculo de tempo de execução
 
   // MPI_Init deve ser invocado antes de qualquer outra chamada MPI
   MPI_Init(&argc, &argv);
@@ -44,12 +52,18 @@ int main(int argc, char** argv) {
   root = 0;     // define o rank do root
 
   if (myrank == root) {
+    start_time = wtime();
     data = 100;  // atribui um valor para ser enviado
     printf("Processo %d (root) realizando broadcast do dado %d\n", root, data);
     sr_bcast(&data, 1, MPI_INT, root, MPI_COMM_WORLD);
   } else {
     sr_bcast(&data, 1, MPI_INT, root, MPI_COMM_WORLD);
     printf("Processo %d recebendo dado %d do processo root\n", myrank, data);
+  }
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (myrank == root){
+    end_time = wtime();
+    printf("Tempo de execução: %ld\n", (long)(end_time - start_time));
   }
 
   MPI_Finalize();

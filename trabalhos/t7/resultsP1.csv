@@ -1,0 +1,11 @@
+tool,ntasks,host-speed,usec
+MPI_Send/Recv,4,10GFlops,30
+MPI_Send/Recv,8,10GFlops,32
+MPI_Send/Recv,16,10GFlops,34
+MPI_Send/Recv,32,10GFlops,38
+MPI_Send/Recv,64,10GFlops,46
+MPI_Bcast,4,10GFlops,51
+MPI_Bcast,8,10GFlops,72
+MPI_Bcast,16,10GFlops,93
+MPI_Bcast,32,10GFlops,114
+MPI_Bcast,64,10GFlops,136

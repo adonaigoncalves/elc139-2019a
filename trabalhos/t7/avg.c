@@ -7,6 +7,12 @@
 #include <mpi.h>
 #include <assert.h>
 
+long wtime(){
+    struct timeval t;
+    gettimeofday(&t, NULL);
+    return t.tv_sec * 1000000 + t.tv_usec;
+}
+
 // Creates an array of random numbers. Each number has a value from 0 - 1
 float *create_rand_nums(int num_elements) {
   float *rand_nums = (float *)malloc(sizeof(float) * num_elements);
@@ -34,7 +40,7 @@ int main(int argc, char** argv) {
     exit(1);
   }
   
-  double start_time_mpi, end_time_mpi;
+  long start_time_mpi, end_time_mpi;
 
   int num_elements_per_proc = atoi(argv[1]);
   // Seed the random number generator to get different results each time
@@ -53,7 +59,7 @@ int main(int argc, char** argv) {
   float *rand_nums = NULL;
   if (world_rank == 0) {
     rand_nums = create_rand_nums(num_elements_per_proc * world_size);
-    //start_time_mpi = MPI_Wtime();
+    start_time_mpi = wtime();
   }
 
   // For each process, create a buffer that will hold a subset of the entire
@@ -83,8 +89,8 @@ int main(int argc, char** argv) {
   // produce the correct answer.
   if (world_rank == 0) {
     float avg = compute_avg(sub_avgs, world_size);
-    //end_time_mpi = MPI_Wtime();
-    //printf("%f\n", (end_time_mpi - start_time_mpi)*1000);
+    end_time_mpi = wtime();
+    printf("Tempo de execução: %ld\n", (long)(end_time_mpi - start_time_mpi));
      printf("Avg of all elements is %f\n", avg);
     // Compute the average across the original data for comparison
     float original_data_avg =
