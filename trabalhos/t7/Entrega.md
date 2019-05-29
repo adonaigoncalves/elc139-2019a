@@ -10,13 +10,13 @@ Disciplina: ELC139 - Programação Paralela
 
 ## Parte 1
 
-Abaixo os algoritmos analisados e os gráficos gerados:
+Abaixo os algoritmos analisados e o gráfico gerado:
 - [sr_bcast.c](sr_bcast.c) - MPI_Send e MPI_Recv
 - [my_sr_bcast.c](my_sr_bcast.c) - MPI_Bcast
 
+<img src="./charts/chartP1.png" width="400">
 
-
-Os tempos de execução foram obtidos através da média de 10 execuções para cada configuração.
+Os tempos de execução foram obtidos através da média de 10 execuções para cada configuração, onde a banda era de 125Mbps, latência de 5us e velocidade de 10GFlops.
 Abaixo a tabela com os resultados obtidos:
 - [resultsP1.csv](resultsP1.csv)
 
@@ -25,9 +25,12 @@ Abaixo a tabela com os resultados obtidos:
 Abaixo o algoritmo analisado e os gráficos gerados:
 - [avg.c](avg.c)
 
+<img src="./charts/chartP2.1.png" width="400">
+<img src="./charts/chartP2.2.png" width="400">
+<img src="./charts/chartP2.3.png" width="400">
+<img src="./charts/chartP2.4.png" width="400">
 
-
-Os tempos de execução foram obtidos através da média de 10 execuções para cada configuração.
+Os tempos de execução foram obtidos através da média de 10 execuções para cada configuração, onde a velocidade era de 10GFlops.
 Abaixo a tabela com os resultados obtidos:
 - [resultsP2.csv](resultsP2.csv)
 
