@@ -1,0 +1,9 @@
+file,width,frame,time,speedup
+wave.cpp,1024,100,5.6782 s,-
+wave.cpp,1024,200,11.2784 s,-
+wave.cpp,2048,100,22.7548 s,-
+wave.cpp,2048,200,45.4517 s,-
+wavecuda1.cu,1024,100,0.6227 s,9.1186
+wavecuda1.cu,1024,200,0.6485 s,17.3915
+wavecuda1.cu,2048,100,2.0340 s,11.1872
+wavecuda1.cu,2048,200,2.1545 s,21.0961
