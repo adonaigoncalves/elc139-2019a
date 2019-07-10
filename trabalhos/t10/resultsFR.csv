@@ -1,0 +1,9 @@
+mode,width,frames,time,speedup
+normal,512,32,9.806s,-
+normal,512,64,18.908s,-
+normal,1024,32,39.342s,-
+normal,1024,64,75.389s,-
+OpenACC,512,32,0.651s,15.062
+OpenACC,512,64,0.780s,24.241
+OpenACC,1024,32,1.009s,38.991
+OpenACC,1024,64,1.532s,49.209
